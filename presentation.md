@@ -1,10 +1,38 @@
-This is a story of how I took a gem
+This is a story of how I wrote a gem.
 
-Problem: I knew what the effect of the code had to be, but I didn't
-know:
+
+Ok, that's not very exciting.
+
+
+This is the story about how I wrote a gem without knowing the
+implementation, the API or even what clever name I would give it.
+
+
+Still needs some excitement.
+
+
+Let's say there were ninja pirates attacking me as I worked.
+
+
+The gem I wrote is unimportant. The problem I faced when writing it is
+more universal. I more or less knew what the end result of the gem had
+to be, but...
+
+
+I didn't know:
 - the API
 - the features
-- I d
+- the implementation
+
+
+Remembering an idea I heard on Ruby Rogues (epsiode #44), I decided to
+try Readme Driven Development. Before I wrote any code, I would write
+the Readme. Then I would implement tests that assert the Readme is
+correct. Then I would write code that passes the tests.
+
+
+History
+
 
 Readme Driven Development is not a new idea. Like most programming
 techniques, it crops up again and again under new names:
@@ -26,6 +54,17 @@ file could generate a working program.
 
 http://docs.python.org/2/library/doctest.html
 http://coffeescript.org/#literate
+
+
+1971
+
+UNIX introduces man pages, which were initially written after
+implementation. But their importance only grew. Man pages became Readme
+files as open source software takes off.
+
+
+Thanks to GitHub (co-founded by Tom Preston-Werner, he of the RDD blog
+post), Readmes are more important that ever.
 
 
 Ok, how does this work
