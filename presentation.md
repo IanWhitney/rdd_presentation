@@ -59,15 +59,16 @@ http://coffeescript.org/#literate
 1971
 
 UNIX introduces man pages, which were initially written after
-implementation. But their importance only grew. Man pages became Readme
-files as open source software takes off.
+implementation. I can't prove it, but surely someone wrote a man page before writing the program. If they had blogs, they would have blogged about it.
 
 
 Thanks to GitHub (co-founded by Tom Preston-Werner, he of the RDD blog
-post), Readmes are more important that ever.
+post), Readmes are more important that ever, they are how programmers
+for years will learn about your code.
 
 
 Ok, how does this work
+
 
 Before writing code, before writing tests, document how your application
 will work.
@@ -97,16 +98,14 @@ The Terrible:
 The Value:
   - The optimism of a clean design, unfettered be actual code
   - The greater understanding of a problem that can come from writing
+  - Spotting API or implementation problems before you have a bunch of
+    libraries that do it wrong.
 
 
 So, ditch the terrible, keep the good. Writing a Readme lets you
 document the working of a tool the way you **want** it to work. No
 worrying about implementation, technology or timelines. Make the best
-API you can.
-
-
-And desgining that API might reveal to you problems that you otherwise
-wouldn't have thought of until you were hip-deep in code.
+API you can. Describe a gem that would make you happy.
 
 
 I had a Rails gem to write, so I needed to document how it would be
@@ -162,13 +161,21 @@ Getting really jiggy with it
 https://github.com/avdi/keyword_params
 
 
-Good situations
+When to use it:
+  - Small gems
+  - Greenfield work
 
 
-Bad situations
+Bad situations:
+  - Huge applications
+  - A replacement for existing API
 
 
-The accolades
+The accolades:
+  The README is top notch.  Really. - James Edward Gray II
 
 
 Thanks
+  - GitHub: IanWhitney
+  - Twitter: iwhitney
+  - The Gem: hstore_radio_buttons
