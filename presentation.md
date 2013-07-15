@@ -8,20 +8,14 @@ This is the story about how I wrote a gem without knowing the
 implementation, the API or even what clever name I would give it.
 
 
-Still needs some excitement.
+In other words, how I write nearly everything.
 
 
-Let's say there were ninja pirates attacking me as I worked.
+But this time I tried to do it better.
 
 
 The gem I wrote is unimportant. The problem I faced when writing it is
-more universal. I more or less knew what the end result of the gem had
-to be, but I didn't know:
-
-
-- the API
-- the features
-- the implementation
+more universal. 
 
 
 Remembering an idea I heard on Ruby Rogues (epsiode #44), I decided to
@@ -45,10 +39,10 @@ Then I would write code that passes the tests.
 - Tom Preston-Werner
 <aside class='notes'>This is from a 2010 blog post on RDD. I didn't recognize this name initially, but if
 anyone has made the Readme important, it's Tom, co-founder of GitHub.
-What's the first thing you see for every project on GitHub? The readme.</aside>
+What's the first thing you see for every project on GitHub? The readme. What's the one file GitHub nags you to create for any new repo? The readme.</aside>
 
 
-Ok, so what am I writing about?
+Ok, I'm writing 'about my software'. But about what, exactly?
 <aside class='notes'>'The Gem' is the obvious answer, but maybe a little
 abstract. I think the readme should have 4 sections</aside>
 
@@ -60,12 +54,12 @@ abstract. I think the readme should have 4 sections</aside>
   - General API documentation
 
 
-So, I have a full documented spec of my application before I write any
-code? Wait, this sounds familiar.
+So, I have a documentation of my gem before I write any
+code? Wait, this sounds familiar&hellip;
 
 
 ## BDUF
-<img src="http://images-mediawiki-sites.thefullwiki.org/09/3/1/6/40424692559461574.png">
+<img src="images/bduf.png">
 
 
 We've heaped so much scorn on BDUF that we've forgotten what was
@@ -129,7 +123,7 @@ The unfettered freedom of natural language gives you more than enough rope to ha
 
   * YAGNI
   * Small
-  * Stay within the possible
+  * Stay within the possible, not the known
 <aside class='notes'>YAGNI is a vital rule, no matter what you're
 writing. But when you're writing this free-form natural document, you
 have to keep a closer eye on it. It's really easy for extra, unnecessary
@@ -139,7 +133,9 @@ come from having a tight, useable API. As for that 3rd point, that leads
 to a corollary of the 2nd rule.</aside>
 
 
-### Use that rope for something good
+### Hoisting > Hanging
+<img src="images/hoist.png" />
+
 
   * Improve yourself
   * Improve your gem
@@ -163,7 +159,8 @@ Just don't forget to update your readme as you go.
   1. Document feature
   2. Test feature
   3. Implement feature
-  4. Goto 1 and revise
+  4. Refactor
+  5. Goto 1 and revise
 
 
 Works great even for features you're not sure you want
@@ -176,6 +173,9 @@ the gem more useful. That's a win.</aside>
 
 ## Getting really jiggy with it
 https://github.com/avdi/keyword_params
+
+
+<img src="images/avdi.png" />
 
 
 ### When to use it:
@@ -194,6 +194,7 @@ https://github.com/avdi/keyword_params
 
 
 ## Thanks
-  - GitHub: IanWhitney
-  - Twitter: iwhitney
+  - The GitHub: IanWhitney
+  - The Blog: IanWhitney.github.io
+  - The Twitter: iwhitney
   - The Gem: hstore_radio_buttons
