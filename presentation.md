@@ -37,12 +37,14 @@ Then I would write code that passes the tests.
 
 "Writing a Readme is absolutely essential to writing good software. Until you've written about your software, you have no idea what you'll be coding."  
 - Tom Preston-Werner
+
 <aside class='notes'>This is from a 2010 blog post on RDD. I didn't recognize this name initially, but if
 anyone has made the Readme important, it's Tom, co-founder of GitHub.
 What's the first thing you see for every project on GitHub? The readme. What's the one file GitHub nags you to create for any new repo? The readme.</aside>
 
 
 Ok, I'm writing 'about my software'. But about what, exactly?
+
 <aside class='notes'>'The Gem' is the obvious answer, but maybe a little
 abstract. I think the readme should have 4 sections</aside>
 
@@ -81,6 +83,7 @@ terrible about it and what actually had some value:
 
 
 Ditch the terrible, keep the good. 
+
 <aside class='notes'>That's glib. Just realize that by writing a Readme
 first you aren't binding yourself irrevocably to it. It's a place
 for you to describe what you need the gem to do. It's not something that
@@ -89,6 +92,7 @@ needs a ton of bulky processess around it.</aside>
 
 ### First Rule
 #### Describe a gem that would make you happy to use.
+
 <aside class='notes'>If it's going to make you happy, then it's more
 likely to make others happy. Don't worry about implementation (much),
 just make it pleasing.</aside>
@@ -124,6 +128,7 @@ The unfettered freedom of natural language gives you more than enough rope to ha
   * YAGNI
   * Small
   * Stay within the possible, not the known
+
 <aside class='notes'>YAGNI is a vital rule, no matter what you're
 writing. But when you're writing this free-form natural document, you
 have to keep a closer eye on it. It's really easy for extra, unnecessary
@@ -139,6 +144,7 @@ to a corollary of the 2nd rule.</aside>
 
   * Improve yourself
   * Improve your gem
+
 <aside class='notes'>Describing a feature you want, but don't quite now
 how to implement lets you learn a new technique. Starting with code, or
 even tests first can lead you towards familiar implementations and
@@ -164,6 +170,7 @@ Just don't forget to update your readme as you go.
 
 
 Works great even for features you're not sure you want
+
 <aside class='notes'>My inital intent was to do all configuration through yaml. Co-worker
 suggested also doing class-level macros. I wasn't in love with it, but I went along with it and 
 documented the feature in the readme. After documenting it, I realized the data structure was
