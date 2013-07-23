@@ -11,7 +11,13 @@ implementation, the API or even what clever name I would give it.
 In other words, how I write nearly everything.
 
 
-But this time I tried to do it better.
+And I know how well that works.
+<aside class='notes'>The polite term would be "design through
+experience". The more accurate term might be "Redoing a bunch of work
+because I did it wrong the first time."</aside>
+
+
+This time I tried to do it better.
 
 
 The gem I wrote is unimportant. The problem I faced when writing it is
@@ -63,6 +69,8 @@ code? Wait, this sounds familiar&hellip;
 ## BDUF
 <img src="images/bduf.png">
 
+<aside class='notes'>*sad trombone*</aside>
+
 
 We've heaped so much scorn on BDUF that we've forgotten what was
 terrible about it and what actually had some value:
@@ -106,7 +114,7 @@ This is where I started. I already had the beginning of a design, but it didn't 
   - Followed implementation patterns I was very familiar with, even though those weren't entirely appropriate.
 
 
-I ditched that and wrote a Readme I found pleasing:
+I ditched that mess and wrote a Readme I found pleasing:
 
 
   - Easy to configure
@@ -115,7 +123,7 @@ I ditched that and wrote a Readme I found pleasing:
   - Simple form helpers for easy display, keeping Rails helpers if I need more complex behavior.
 
 
-Great! Now if I only knew how to make that happen.
+Great! But&hellip;I don't know how to code half of that.
 
 
 The unfettered freedom of natural language gives you more than enough rope to hang yourself.
@@ -138,7 +146,8 @@ come from having a tight, useable API. As for that 3rd point, that leads
 to a corollary of the 2nd rule.</aside>
 
 
-### Hoisting > Hanging
+### 2b
+#### Hoisting > Hanging
 <img src="images/hoist.png" />
 
 
@@ -178,21 +187,47 @@ exactly the same, so implementing both would be a snap and might make
 the gem more useful. That's a win.</aside>
 
 
+## Did it work?
+
+
+- Gem finished
+- Used in our Production environment
+- Hasn't bugged out and wiped a database yet
+<aside class='notes'>So that's a 'yes'. More generally, I found the gem
+was more consistent and more flexible. And, while writing it, I rarely
+found myself thinking, 'wait, what am I doing?' or 'well that whole
+thing needs to be rewritten'</aside>
+
+
 ## Getting really jiggy with it
 https://github.com/avdi/keyword_params
 
 
 <img src="images/avdi.png" />
+<aside class='notes'>Excessive? A bit. On the plus side, you don't have
+to write and maintain tests outside of your readme. Downsides include a less readable and
+natural readme. I find the negatives outweigh the positives, but I still
+really enjoy this idea.</aside>
 
 
 ### When to use it:
-  - Small gems
+  - Small projects
   - Greenfield work
+<aside class='notes'>Smaller is easier, obviously. That's an opinion
+that is pretty widely held in Ruby-land. And if you're trying to
+document the general behavior of a gem or app, a small one will be
+easier than a huge one. And new work gives you the freedom of a readme
+without too many constraints</aside>
 
 
 ### Less Good Situations:
   - Monolithic applications
   - A replacement for existing API
+<aside class='notes'>And, if you think about it, this only reinforces a
+lot of the good programming practices we know. Don't make huge monolith
+apps, do make small reusable gems. If you're replacing an API, then that
+API is probably already documented. If not, then you have other
+problems.</aside>
 
 
 ### The accolades:
